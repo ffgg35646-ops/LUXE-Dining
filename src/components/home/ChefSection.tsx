@@ -36,12 +36,12 @@ const ChefSection = () => {
               />
 
               <div className="p-6 text-center">
-                <h3 className="text-xl font-semibold text-white">
+                <h3 className="text-xl-semibold text-white">
                   {chef.name}
                 </h3>
 
                 <p className="mt-2 text-amber-400">
-                  {chef.position}
+                  {chef.role}
                 </p>
 
                 <p className="mt-4 text-sm leading-7 text-neutral-400">
