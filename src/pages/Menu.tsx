@@ -14,7 +14,7 @@ const Menu = () => {
     return menu.filter((item) => {
       const matchesCategory =
         selectedCategory === "all" ||
-        item.category.toLowerCase() === selectedCategory.toLowerCase();
+        item.categoryId.toLowerCase() === selectedCategory.toLowerCase();
 
       const matchesSearch =
         item.name.toLowerCase().includes(search.toLowerCase()) ||
