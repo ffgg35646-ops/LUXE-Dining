@@ -1,0 +1,58 @@
+import { Testimonial } from "@/types";
+
+export const testimonials: Testimonial[] = [
+  {
+    id: "1",
+    customer: "Emma Wilson",
+    avatar: "/images/customers/emma.jpg",
+    rating: 5,
+    comment:
+      "Absolutely the best fine dining experience I've ever had. Every dish was beautifully presented and tasted incredible.",
+    date: "2026-01-15"
+  },
+  {
+    id: "2",
+    customer: "Michael Johnson",
+    avatar: "/images/customers/michael.jpg",
+    rating: 5,
+    comment:
+      "Exceptional service, elegant atmosphere, and unforgettable Wagyu steak. Highly recommended.",
+    date: "2026-02-08"
+  },
+  {
+    id: "3",
+    customer: "Sophia Martinez",
+    avatar: "/images/customers/sophia.jpg",
+    rating: 4.8,
+    comment:
+      "The seafood selection was incredibly fresh, and the desserts were simply outstanding.",
+    date: "2026-03-12"
+  },
+  {
+    id: "4",
+    customer: "Daniel Brown",
+    avatar: "/images/customers/daniel.jpg",
+    rating: 5,
+    comment:
+      "A luxury dining experience from start to finish. Professional staff and amazing food quality.",
+    date: "2026-04-01"
+  },
+  {
+    id: "5",
+    customer: "Olivia Taylor",
+    avatar: "/images/customers/olivia.jpg",
+    rating: 4.9,
+    comment:
+      "The reservation process was smooth, the restaurant ambience was beautiful, and every meal exceeded expectations.",
+    date: "2026-05-18"
+  },
+  {
+    id: "6",
+    customer: "James Anderson",
+    avatar: "/images/customers/james.jpg",
+    rating: 5,
+    comment:
+      "One of the finest restaurants I've visited. The chef's special menu was absolutely worth trying.",
+    date: "2026-06-05"
+  }
+];
