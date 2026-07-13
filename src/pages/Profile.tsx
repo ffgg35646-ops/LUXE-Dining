@@ -16,29 +16,53 @@ const Profile = () => {
 
             <div className="space-y-8">
               <div className="grid gap-6 sm:grid-cols-2 xl:grid-cols-4">
-                <StatsCard
-                  title="Reservations"
-                  value="18"
-                  description="Completed bookings"
-                />
+                <div className="rounded-2xl border border-neutral-800 bg-neutral-900 p-6">
+                  <h3 className="text-sm uppercase tracking-wide text-neutral-500">
+                    Reservations
+                  </h3>
+                  <p className="mt-3 text-3xl font-bold text-white">
+                    18
+                  </p>
+                  <p className="mt-2 text-sm text-neutral-400">
+                    Completed bookings
+                  </p>
+                </div>
 
-                <StatsCard
-                  title="Orders"
-                  value="42"
-                  description="Food orders"
-                />
+                <div className="rounded-2xl border border-neutral-800 bg-neutral-900 p-6">
+                  <h3 className="text-sm uppercase tracking-wide text-neutral-500">
+                    Orders
+                  </h3>
+                  <p className="mt-3 text-3xl font-bold text-white">
+                    42
+                  </p>
+                  <p className="mt-2 text-sm text-neutral-400">
+                    Food orders
+                  </p>
+                </div>
 
-                <StatsCard
-                  title="Reward Points"
-                  value="2,450"
-                  description="Available balance"
-                />
+                <div className="rounded-2xl border border-neutral-800 bg-neutral-900 p-6">
+                  <h3 className="text-sm uppercase tracking-wide text-neutral-500">
+                    Reward Points
+                  </h3>
+                  <p className="mt-3 text-3xl font-bold text-white">
+                    2,450
+                  </p>
+                  <p className="mt-2 text-sm text-neutral-400">
+                    Available balance
+                  </p>
+                </div>
 
-                <StatsCard
-                  title="Favorite Dishes"
-                  value="16"
-                  description="Saved items"
-                />
+                <div className="rounded-2xl border border-neutral-800 bg-neutral-900 p-6">
+                  <h3 className="text-sm uppercase tracking-wide text-neutral-500">
+                    Favorite Dishes
+                  </h3>
+                  <p className="mt-3 text-3xl font-bold text-white">
+                    16
+                  </p>
+                  <p className="mt-2 text-sm text-neutral-400">
+                    Saved items
+                  </p>
+                </div>
               </div>
 
               <div className="rounded-2xl border border-neutral-800 bg-neutral-900 p-8">
