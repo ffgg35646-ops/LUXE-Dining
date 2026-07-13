@@ -21,7 +21,7 @@ const MenuDetails = ({ item }: MenuDetailsProps) => {
 
       <div className="flex flex-col justify-center">
         <div className="mb-5 flex items-center gap-3">
-          <Badge>{item.category}</Badge>
+          <Badge>{item.categoryId}</Badge>
 
           {item.featured && (
             <Badge variant="warning">
@@ -68,12 +68,12 @@ const MenuDetails = ({ item }: MenuDetailsProps) => {
             </h3>
 
             <div className="flex flex-wrap gap-3">
-              {item.ingredients.map((ingredient) => (
+              {item.ingredients.map((ingredient, index) => (
                 <Badge
-                  key={ingredient}
+                  key={`${ingredient.name ?? ingredient}-${index}`}
                   variant="secondary"
                 >
-                  {ingredient}
+                  {ingredient.name ?? ingredient}
                 </Badge>
               ))}
             </div>
