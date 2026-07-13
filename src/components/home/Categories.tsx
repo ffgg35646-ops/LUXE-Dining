@@ -28,10 +28,6 @@ const Categories = () => {
               key={category.id}
               className="rounded-2xl border border-neutral-800 bg-neutral-900 p-8 text-center transition duration-300 hover:-translate-y-2 hover:border-amber-500"
             >
-              <div className="mb-5 text-5xl">
-                {category.icon}
-              </div>
-
               <h3 className="text-xl font-semibold text-white">
                 {category.name}
               </h3>
