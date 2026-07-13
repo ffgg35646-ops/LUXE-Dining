@@ -25,7 +25,7 @@ const Wishlist = () => {
           ) : (
             <EmptyState
               title="Your Wishlist is Empty"
-              description="Browse our menu and add your favorite dishes to your wishlist."
+              message="Browse our menu and add your favorite dishes to your wishlist."
             />
           )}
         </div>
