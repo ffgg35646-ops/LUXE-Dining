@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { MenuItem } from "@/types";
 import Badge from "@/components/ui/Badge";
 import Button from "@/components/ui/Button";
-import Rating from "@/components/ui/Rating";
 
 interface MenuCardProps {
   item: MenuItem;
@@ -21,7 +20,9 @@ const MenuCard = ({ item }: MenuCardProps) => {
 
         {item.featured && (
           <div className="absolute left-4 top-4">
-            <Badge>Featured</Badge>
+            <Badge>
+              Featured
+            </Badge>
           </div>
         )}
       </div>
@@ -41,7 +42,9 @@ const MenuCard = ({ item }: MenuCardProps) => {
           {item.description}
         </p>
 
-        <Rating value={item.rating} />
+        <div className="text-amber-400">
+          {"★".repeat(Math.round(item.rating))}
+        </div>
 
         <div className="flex items-center justify-between pt-2">
           <Link to={`/menu/${item.slug}`}>
