@@ -2,6 +2,15 @@ import { testimonials } from "@/data/testimonials";
 
 import Rating from "@/components/ui/Rating";
 
+type Testimonial = {
+  id: string | number;
+  name: string;
+  image: string;
+  location: string;
+  rating: number;
+  comment: string;
+};
+
 const Testimonials = () => {
   return (
     <section className="bg-neutral-950 py-20">
@@ -22,7 +31,7 @@ const Testimonials = () => {
         </div>
 
         <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
-          {testimonials.map((testimonial) => (
+          {(testimonials as Testimonial[]).map((testimonial) => (
             <article
               key={testimonial.id}
               className="rounded-2xl border border-neutral-800 bg-neutral-900 p-8"
