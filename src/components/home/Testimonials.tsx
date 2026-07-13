@@ -1,15 +1,41 @@
-import { testimonials } from "@/data/testimonials";
-
-import Rating from "@/components/ui/Rating";
-
 type Testimonial = {
-  id: string | number;
+  id: number;
   name: string;
   image: string;
   location: string;
   rating: number;
   comment: string;
 };
+
+const testimonials: Testimonial[] = [
+  {
+    id: 1,
+    name: "James Anderson",
+    image: "https://i.pravatar.cc/150?img=12",
+    location: "New York",
+    rating: 5,
+    comment:
+      "An unforgettable dining experience with amazing food and service.",
+  },
+  {
+    id: 2,
+    name: "Sophia Williams",
+    image: "https://i.pravatar.cc/150?img=32",
+    location: "London",
+    rating: 5,
+    comment:
+      "The atmosphere, flavors, and attention to detail were exceptional.",
+  },
+  {
+    id: 3,
+    name: "Michael Brown",
+    image: "https://i.pravatar.cc/150?img=45",
+    location: "Paris",
+    rating: 4,
+    comment:
+      "One of the best restaurants I have visited. Highly recommended.",
+  },
+];
 
 const Testimonials = () => {
   return (
@@ -31,7 +57,7 @@ const Testimonials = () => {
         </div>
 
         <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
-          {(testimonials as Testimonial[]).map((testimonial) => (
+          {testimonials.map((testimonial) => (
             <article
               key={testimonial.id}
               className="rounded-2xl border border-neutral-800 bg-neutral-900 p-8"
@@ -54,10 +80,9 @@ const Testimonials = () => {
                 </div>
               </div>
 
-              <Rating
-                value={testimonial.rating}
-                showValue={false}
-              />
+              <div className="text-amber-400">
+                {"★".repeat(testimonial.rating)}
+              </div>
 
               <p className="mt-6 leading-8 text-neutral-300">
                 "{testimonial.comment}"
