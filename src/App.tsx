@@ -1,5 +1,9 @@
 function App() {
-  throw new Error("TEST REACT ERROR");
+  return (
+    <div>
+      <h1>LUXE Dining</h1>
+    </div>
+  );
 }
 
 export default App;
