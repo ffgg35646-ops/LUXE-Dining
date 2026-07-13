@@ -27,7 +27,7 @@ const MenuDetails = () => {
           <div className="mx-auto max-w-7xl px-6">
             <EmptyState
               title="Dish Not Found"
-              description="The dish you are looking for may have been removed or the URL is incorrect."
+              message="The dish you are looking for may have been removed or the URL is incorrect."
             />
           </div>
         </section>
