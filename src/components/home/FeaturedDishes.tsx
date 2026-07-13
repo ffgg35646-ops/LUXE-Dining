@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 import { menu } from "@/data/menu";
-import MenuCard from "@/components/menu/MenuCard";
+import MenuCard from "@/components/ui/MenuCard";
 import Button from "@/components/ui/Button";
 
 const FeaturedDishes = () => {
