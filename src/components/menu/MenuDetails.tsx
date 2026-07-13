@@ -2,7 +2,6 @@ import { MenuItem } from "@/types";
 
 import Badge from "@/components/ui/Badge";
 import Button from "@/components/ui/Button";
-import Rating from "@/components/ui/Rating";
 
 interface MenuDetailsProps {
   item: MenuItem;
@@ -34,11 +33,8 @@ const MenuDetails = ({ item }: MenuDetailsProps) => {
           {item.name}
         </h1>
 
-        <div className="mt-5">
-          <Rating
-            value={item.rating}
-            size="lg"
-          />
+        <div className="mt-5 text-lg text-amber-400">
+          {"★".repeat(Math.round(item.rating))}
         </div>
 
         <p className="mt-8 text-lg leading-8 text-neutral-300">
@@ -70,10 +66,12 @@ const MenuDetails = ({ item }: MenuDetailsProps) => {
             <div className="flex flex-wrap gap-3">
               {item.ingredients.map((ingredient, index) => (
                 <Badge
-                  key={`${ingredient.name ?? ingredient}-${index}`}
+                  key={`${typeof ingredient === "object" ? ingredient.name : ingredient}-${index}`}
                   variant="secondary"
                 >
-                  {ingredient.name ?? ingredient}
+                  {typeof ingredient === "object"
+                    ? ingredient.name
+                    : ingredient}
                 </Badge>
               ))}
             </div>
