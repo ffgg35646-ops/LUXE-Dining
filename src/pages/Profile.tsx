@@ -1,6 +1,5 @@
 import PageHeader from "@/components/layout/PageHeader";
 import ProfileCard from "@/components/dashboard/ProfileCard";
-import StatsCard from "@/components/dashboard/StatsCard";
 
 const Profile = () => {
   return (
