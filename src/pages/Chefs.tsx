@@ -33,7 +33,7 @@ const Chefs = () => {
                   </h2>
 
                   <p className="mt-2 font-medium text-amber-400">
-                    {chef.position}
+                    {chef.role}
                   </p>
 
                   <p className="mt-5 leading-7 text-neutral-400">
